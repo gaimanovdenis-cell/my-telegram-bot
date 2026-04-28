@@ -6,8 +6,8 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import Message
 from aiogram.client.default import DefaultBotProperties
 
-# Вставьте сюда токен вашего бота
-TOKEN = "8571143583:AAHD6E7fEYiNWMvXGxTD0_etQOsWa85_sss"
+import os
+TOKEN = os.environ.get("BOT_TOKEN")
 
 # Инициализация бота с учетом обновлений aiogram 3.7+
 # Теперь parse_mode передается через DefaultBotProperties
